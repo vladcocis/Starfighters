@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Background">
+    <Position X="1" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAQAAAAAAAAAIAAAEAAAABCQgAAAAAAA=</HashCode>
+      <FileName>Background.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Boss">
+    <Position X="4" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEQAIAAAAQAAQAAAAAALAAAEAAAERDQAACAAAAg=</HashCode>
+      <FileName>Boss.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet">
+    <Position X="23.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAQAAAAAAAAAIAAAEAAAABCQAAABQAAA=</HashCode>
+      <FileName>Bullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Chicken">
+    <Position X="18" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAQAAAAIAAAAIAAAEAAAABCQAAABAAAA=</HashCode>
+      <FileName>Chicken.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemySpaceship">
+    <Position X="14.5" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEQAIAAAAQAAAAAAAAILAAAEAAAERCQAAAAAAAg=</HashCode>
+      <FileName>EnemySpaceship.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explosion">
+    <Position X="8.5" Y="14.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAIAAAAQAAAAEAAAAMEAAEAAAABDQAAAAAAAA=</HashCode>
+      <FileName>Explosion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game">
+    <Position X="34" Y="6.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Game::GameState">
+        <TypeIdentifier>
+          <NewMemberFileName>gamecode.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CEQAAAAACECARAAAAEACAQAQAAjAAAAAAAIAJACAAAA=</HashCode>
+      <FileName>gamecode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameManager">
+    <Position X="29.75" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQQQACQAAAKAAAAAAEIIgCAIAAIEIBABTDAAAABAAAA=</HashCode>
+      <FileName>GameManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject">
+    <Position X="12.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAACBBAAAAEoAAIJAIEAAEAAAIBTAAAAJAAAA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laser">
+    <Position X="8.25" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAQAAAAAAAAAIAAAEAAAEBCQAAABAAAA=</HashCode>
+      <FileName>Laser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectManager">
+    <Position X="30" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQIQAABAIAAIAABgAAAAAAIAAAAAgACAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Particles">
+    <Position X="8.25" Y="10" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAACQgAAAAQIAAIIAAEAEAABDAAAAAAAAA=</HashCode>
+      <FileName>Particles.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Asteroid">
+    <Position X="20.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAIAAAAQAAAAAAAAAJAAAEAAAFRCQAAAAAAAg=</HashCode>
+      <FileName>Asteroid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundFX">
+    <Position X="12.5" Y="21" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAACBABBAQgBACCBAIAEAgJCEAgABABAEQEAAA=</HashCode>
+      <FileName>SoundFX.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spaceship">
+    <Position X="26" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEQAIAAAAQAAAAAAAAAIAACEAAAERCQABAAgAAg=</HashCode>
+      <FileName>Spaceship.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Message">
+    <Position X="37.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAABAAACAAAAAAQAAAA=</HashCode>
+      <FileName>Message.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="MessageType">
+    <Position X="40.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEgQA=</HashCode>
+      <FileName>messagetypes.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ObjectType">
+    <Position X="16" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAACAAwAAAAAAgAAAAAAAAACAJAAAGEAA=</HashCode>
+      <FileName>objecttypes.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,106 @@
+MySoundEngine* pSE = MySoundEngine::GetInstance();
+	MyDrawEngine* pDE = MyDrawEngine::GetInstance();
+	pDE->DrawAt(pos, image, size, orientation, visibility);
+
+	MyInputs* pInputs = MyInputs::GetInstance();
+	pInputs->SampleKeyboard();
+
+	static bool wPressed = false;
+	static bool sPressed = false;
+	static bool aPressed = false;
+	static bool dPressed = false;
+
+	Vector2D velocity;
+	
+
+	if (pInputs->KeyPressed(DIK_W))
+	{
+		if(wPressed == false)
+			pSE->Play(engineSound, true);
+		velocity.setBearing(orientation, 4.0f);
+		pos = pos + velocity;
+		wPressed = true;
+	}
+	else
+	{
+		if(wPressed)
+		pSE->Stop(engineSound);
+		wPressed = false;
+	}
+
+	if (pInputs->KeyPressed(DIK_S))
+	{
+		if (sPressed == false)
+			pSE->Play(engineSound, true);
+		velocity.setBearing(orientation, -4.0f);
+		pos = pos + velocity;
+		sPressed = true;
+	}
+	else
+	{
+		if (sPressed)
+			pSE->Stop(engineSound);
+		sPressed = false;
+	}
+
+	if (pInputs->KeyPressed(DIK_A))
+	{
+		if (aPressed == false)
+			pSE->Play(engineSound, true);
+		velocity.setBearing(orientation - 1.57f, 4.0f);
+		pos = pos + velocity;
+		aPressed = true;
+	}
+	else
+	{
+		if (aPressed)
+			pSE->Stop(engineSound);
+		aPressed = false;
+	}
+
+	if (pInputs->KeyPressed(DIK_D))
+	{
+		if (dPressed == false)
+			pSE->Play(engineSound, true);
+		velocity.setBearing(orientation + 1.57f, 4.0f);
+		pos = pos + velocity;
+		dPressed = true;
+	}
+	else
+	{
+		if (dPressed)
+			pSE->Stop(engineSound);
+		dPressed = false;
+	}
+
+	if (pInputs->KeyPressed(DIK_LEFT))
+	{
+		orientation -= 0.05f;
+	}
+
+	if (pInputs->KeyPressed(DIK_RIGHT))
+	{
+		orientation += 0.05f;
+	}
+
+	if (pInputs->KeyPressed(DIK_UP))
+	{
+		size += 0.05f;
+	}
+
+	if (pInputs->KeyPressed(DIK_DOWN))
+	{
+		size -= 0.05f;
+	}
+
+	/* Move in direction it is pointing
+	Vector2D velocity;
+	velocity.setBearing(orientation, 4.0f);
+	pos = pos + velocity;
+	*/
+
+	
+	if (pInputs->KeyPressed(DIK_SPACE))
+	{
+		pSE->Play(shootSound);
+	}
